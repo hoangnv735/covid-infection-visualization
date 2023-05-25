@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 # provinces = json.load(open("vietnam.geojson", "r"))
-os.makedirs('page', exist_ok=True)
+os.makedirs('docs', exist_ok=True)
 provinces = json.load(open("vietnam.simplified.geojson", "r"))
 df = pd.read_csv("data.csv", header=0)
 df["Total"] = df["Total"].apply(lambda x: int(str(x).replace(".", "")))
@@ -24,7 +24,7 @@ fig = px.choropleth(
 
 fig.update_geos(fitbounds='locations', visible=False)
 # fig.show()
-fig.write_html("page/infection.html")
+fig.write_html("docs/infection.html")
 
 fig = px.choropleth(
     data_frame=df,
@@ -40,4 +40,4 @@ fig = px.choropleth(
 
 fig.update_geos(fitbounds='locations', visible=False)
 # fig.show()
-fig.write_html("page/death.html")
+fig.write_html("docs/death.html")
