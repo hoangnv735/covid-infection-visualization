@@ -34,7 +34,7 @@ fig = px.choropleth(
     color="Death",
     color_continuous_scale="YlOrRd",
     range_color=(0, df["Death"].max()),
-    labels={"Total": "Death Cases"},
+    labels={"Death": "Death Cases"},
     title="COVID-19 Total Death Cases by Province in Vietnam",
 )
 
