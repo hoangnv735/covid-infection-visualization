@@ -1,4 +1,4 @@
-# Covid-19 total infection cases by provice in Vietnam
+# Covid-19 total infection cases by province in Vietnam
 
 [Main page](https://hoangnv735.github.io/covid-infection-visualization/index.html)
 
@@ -13,4 +13,4 @@ Visualization created using [plotly](plotly.com)
 
 Map data is from [OpenDevelopmentMekong](https://data.vietnam.opendevelopmentmekong.net/vi/dataset/a-phn-tnh), simplified by [Mapshaper](Mapshaper.org)
 
-![Covid-19 total infection and death cases by provice in Vietnam](screenshot/covid-infection.png)
+![Covid-19 total infection and death cases by province in Vietnam](screenshot/covid-infection.png)
